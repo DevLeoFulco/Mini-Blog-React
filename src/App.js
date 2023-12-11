@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Kratos from "./assets/Kratos Backend.png"
+import ListRender from "./components/ListRender";
+import ManageData from "./components/ManageData";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Iniciando a seção 3</h1>
+      {/*Imagem via public */}
+      <div>
+        <img src="/Kratos escrevendo.png" alt="Personagem Kratos escrevendo"/>
+      </div>
+      {/*Imagem via Assets */}
+      <div>
+        <img src={Kratos} alt="Kratos como desenvolvedor back end"/>
+      </div>
+
+      <ManageData/>
+
+      <ListRender/>
     </div>
   );
 }
